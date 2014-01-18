@@ -7,68 +7,23 @@ html(lang='en')
     title McToxic 
     link(rel='stylesheet', href='/css/pure-min.css')
     link(rel='stylesheet', href='/css/side-menu.css')
+    link(rel='stylesheet', href='/css/main.css')
   body
     #layout
       a#menuLink.menu-link(href='#menu')
         span
       #menu
         .pure-menu.pure-menu-open
-          a.pure-menu-heading(href='http://purecss.io/') Pure
+          a.pure-menu-heading(href='/') McToxic
           ul
             li
-              a(href='http://purecss.io/base/') Base
+              a(href='/') Home
             li
-              a(href='http://purecss.io/grids/') Grids
+              a(href='/food') Food 
             li
-              a(href='http://purecss.io/forms/') Forms
+              a(href='/about') About 
             li
-              a(href='http://purecss.io/buttons/') Buttons
-            li
-              a(href='http://purecss.io/tables/') Tables
-            li
-              a(href='http://purecss.io/menus/') Menus
-            li.pure-menu-selected.menu-item-divided
-              a(href='http://purecss.io/layouts/') Layouts
-            li
-              a(href='http://purecss.io/customize/') Customize
-            li
-              a(href='http://purecss.io/extend/') Extend
-            li
-              a(href='http://blog.purecss.io/') Blog
-            li
-              a(href='https://github.com/yui/pure/releases/') Releases
-            li.menu-item-divided
-              a(href='http://yui.github.io/skinbuilder/?mode=pure') Skin Builder
-            li
-              a(href='http://yuilibrary.com/') YUI Library
+              a(href='/contribute') Contribute 
       #main
         != yield
-        .header
-          h1 Page Title
-          h2 A subtitle for your page goes here
-        .content
-          h2.content-subhead How to use this layout
-          p
-            | To use this layout&comma; you can just copy paste the HTML&comma; along with the CSS in
-            a(href='/css/layouts/side-menu.css', alt='Side Menu CSS') side-menu&period;css
-            | &comma; and the JavaScript in
-            a(href='/js/ui.js') ui&period;js
-            | &period; The JS file uses vanilla JavaScript to simply toggle an
-            code active
-            | class that makes the menu responsive&period;
-          h2.content-subhead Now Let&apos;s Speak Some Latin
-          p
-            | Lorem ipsum dolor sit amet&comma; consectetur adipisicing elit&comma; sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&period; Ut enim ad minim veniam&comma; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat&period; Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur&period; Excepteur sint occaecat cupidatat non proident&comma; sunt in culpa qui officia deserunt mollit anim id est laborum&period;
-          .pure-g-r
-            .pure-u-1-4
-              img(src='http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg', alt='Peyto Lake')
-            .pure-u-1-4
-              img(src='http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg', alt='Train')
-            .pure-u-1-4
-              img(src='http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg', alt='T-Shirt Store')
-            .pure-u-1-4
-              img(src='http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg', alt='Mountain')
-          h2.content-subhead Try Resizing your Browser
-          p
-            | Lorem ipsum dolor sit amet&comma; consectetur adipisicing elit&comma; sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&period; Ut enim ad minim veniam&comma; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat&period; Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur&period; Excepteur sint occaecat cupidatat non proident&comma; sunt in culpa qui officia deserunt mollit anim id est laborum&period;
     script(src='/js/ui.js')
