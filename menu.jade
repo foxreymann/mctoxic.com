@@ -1,8 +1,8 @@
 .header
-  h1 Food 
-  h2 A subtitle for your page goes here
-.content
-  ul
+  h1 Menu 
+  h2 Truth nutritional value of McDonald's food
+.content.menu
+  h2 Beef
     each beef, slug in public.beef._data
-      li
+      p
         a(href="/beef/#{ slug }") #{ beef.title }
