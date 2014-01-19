@@ -1,1 +1,8 @@
-h1 food
+.header
+  h1 Food 
+  h2 A subtitle for your page goes here
+.content
+  ul
+    each beef, slug in public.beef._data
+      li
+        a(href="/beef/#{ slug }") #{ beef.title }
