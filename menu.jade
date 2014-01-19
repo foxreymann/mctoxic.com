@@ -3,6 +3,10 @@
   h2 Truth nutritional value of McDonald's food
 .content.menu
   h2 Beef
+  .pure-g-r
     each beef, slug in public.beef._data
-      p
-        a(href="/beef/#{ slug }") #{ beef.title }
+      != partial("_shared/menu-item", { slug: slug, title: beef.title, img: beef.img })
+  h2 Chicken 
+  .pure-g-r
+    each chicken, slug in public.chicken._data
+      != partial("_shared/menu-item", { slug: slug, title: chicken.title, img: chicken.img })
